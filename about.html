@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Gamzenur Yılmaz | Hakkımda" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>
+      .skill-bar {
+        width: 700px;
+        margin: 20px auto;
+      }
+
+      .skill {
+        height: 30px;
+        background-color: #f4f4f4;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        border-radius: 40px;
+      }
+
+      .skill-level {
+        border-radius: 40px;
+        height: 100%;
+        width: 0;
+        background-color: #4caf50;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        animation: growWidth 1s ease;
+      }
+      .yetenek {
+        margin-left: 13rem;
+      }
+      .dersPro {
+        margin-left: 24rem;
+      }
+      .skill-level-1 {
+        width: 80%;
+      }
+      .skill-level-2 {
+        width: 60%;
+      }
+      .skill-level-3 {
+        width: 60%;
+      }
+      .skill-level-4 {
+        width: 40%;
+      }
+      .skill-level-5 {
+        width: 65%;
+      }
+      @media (max-width: 768px) {
+        table {
+          border: 0;
+          overflow-x: auto;
+          max-width: max-content;
+        }
+        .table-wrapper {
+          overflow-x: auto;
+        }
+        table thead {
+          display: none;
+        }
+
+        /* table,
+        table tbody,
+        table tr,
+        table td {
+          display: block;
+          width: 100%;
+        } */
+
+        /* table tr {
+          margin-bottom: 15px;
+        }
+
+        table td {
+          text-align: right;
+          padding-left: 50%;
+          position: relative;
+        } */
+
+        table td:before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-weight: bold;
+        }
+      }
+      @media (max-width: 600px) {
+        html {
+          overflow-x: hidden;
+        }
+        .skill {
+          height: 15px;
+        }
+        .skill-level {
+          text-align: center;
+          line-height: 15px;
+        }
+        .dersPro {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        /* table {
+          width: 50%;
+          height: 50%;
+        } */
+        .yetenek {
+          margin-left: auto;
+        }
+        /* th,
+        td {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        td:before {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          width: 45%;
+          padding-right: 10px;
+          white-space: nowrap;
+        } */
+      }
+
+      @keyframes growWidth {
+        from {
+          width: 0;
+        }
+      }
+    </style>
+    <!-- Title -->
+    <title>Gamzenur Yılmaz | Hakkımda</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/me-img/favicon.ico" />
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Blockquote -->
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="wrapper">
+        <div class="cssload-loader"></div>
+      </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+      <!-- Main Header Start -->
+      <div class="main-header-area">
+        <div class="classy-nav-container breakpoint-off">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="monaNav">
+            <!-- Background Curve -->
+            <div
+              class="bg-curve"
+              style="background-image: url(./img/me-img/curve.png)"
+            ></div>
+
+            <!-- Logo -->
+            <a class="nav-brand" href="index.html"
+              ><p style="font-size: 3rem; font-weight: 600">
+                gny<span style="color: #4c1224">.</span>
+              </p>
+            </a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"
+                ><span></span><span></span><span></span
+              ></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+              <!-- Menu Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap">
+                  <span class="top"></span><span class="bottom"></span>
+                </div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li>
+                    <a href="./index.html">Anasayfa</a>
+                  </li>
+                  <li class="current-item">
+                    <a href="./about.html">Hakkımda</a>
+                  </li>
+                  <li><a href="./projects.html">Projeler</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="./gallery.html">Galeri</a></li>
+                  <li><a href="./contact.html">İletişim</a></li>
+                </ul>
+
+                <!-- Search Icon -->
+              </div>
+              <!-- Nav End -->
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Breadcrumb Area Start ***** -->
+    <div class="breadcumb-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-end">
+          <div class="col-12">
+            <div class="breadcumb--con">
+              <h2 class="title">Hakkımda</h2>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="index.html"><i class="fa fa-home"></i> Anasayfa</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Hakkımda
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Breadcrumb Area End ***** -->
+
+    <!-- ***** About Us Area Start ***** -->
+    <section class="mona-about-us-area mb-30 section-padding-80-0">
+      <div class="container">
+        <div class="row">
+          <!-- About Us Thumbnail -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="about-us-thumbnail mb-50">
+              <span class="line"></span>
+              <img src="./img/me-img/vesikalik.jpg" alt="" />
+              <span class="line2"></span>
+            </div>
+          </div>
+
+          <!-- About Us Thumbnail -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="about-us-thumbnail mb-50">
+              <h2>
+                <script>
+                  document.write(new Date().getFullYear() - 2002);
+                </script>
+                Yıllık Serüven
+              </h2>
+              <p>Merhaba, ben Gamzenur Yılmaz.</p>
+              <p>
+                2002 yılında Niğde'de doğdum. İlkokul, ortaokul ve lise
+                eğitimimi Niğde'de tamamladım. 2021 yılında Akdeniz Üniversitesi
+                Turizm İşletmeciliği bölümüne başladım. Turizm sektörü sayesinde
+                insan ilişkilerini daha iyi öğrendim.
+              </p>
+              <p>
+                Eğitimimi tamamlarken yazılıma olan ilgimi keşfettim. Bu ilgimi
+                geliştirmek için ek olarak Bilgisayar Programcılığı bölümüne
+                başladım. Yeteneklerimi ilerleterek bu alanda fayda sağlamak
+                istiyorum. Özellikle yapay zeka alanında yapılabileceklerin
+                sınırının olmaması beni bu alana yönlendiriyor. Hedefim kapsamlı
+                projeler ve etkinliklerde yer almak.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Service Area -->
+      <div class="container">
+        <div class="service-area mt-80">
+          <h2 class="yetenek" style="display: flex">Yeteneklerim</h2>
+          <div class="row">
+            <div class="skill-bar">
+              <div class="skill">
+                <div
+                  class="skill-level skill-level-1"
+                  style="background-color: #cd8199"
+                >
+                  HTML 80%
+                </div>
+              </div>
+              <div class="skill">
+                <div
+                  class="skill-level skill-level-2"
+                  style="background-color: #cd8199"
+                >
+                  CSS 60%
+                </div>
+              </div>
+              <div class="skill">
+                <div
+                  class="skill-level skill-level-3"
+                  style="background-color: #cd8199"
+                >
+                  PYTHON 60%
+                </div>
+              </div>
+              <div class="skill">
+                <div
+                  class="skill-level skill-level-4"
+                  style="background-color: #cd8199"
+                >
+                  C# 40%
+                </div>
+              </div>
+              <div class="skill">
+                <div
+                  class="skill-level skill-level-5"
+                  style="background-color: #cd8199"
+                >
+                  ADOBE PHOTOSHOP 65%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** About Us Area End ***** -->
+
+    <!-- ***** Core Value Area Start ***** -->
+
+    <div class="outer-wrapper">
+      <div class="table-wrapper">
+        <h2 class="dersPro">Ders Programı</h2>
+        <table>
+          <tr>
+            <th>Saat</th>
+
+            <th>Pazartesi</th>
+
+            <th>Salı</th>
+
+            <th>Çarşamba</th>
+
+            <th>Perşembe</th>
+
+            <th>Cuma</th>
+          </tr>
+
+          <tr>
+            <td>8:30 9:20</td>
+
+            <td>-</td>
+
+            <td>-</td>
+
+            <td>Web Tasarımının Temelleri</td>
+
+            <td>-</td>
+
+            <td>Programlamanın Temelleri</td>
+          </tr>
+
+          <tr>
+            <td>9:30 10:20</td>
+
+            <td>-</td>
+
+            <td>-</td>
+
+            <td>Web Tasarımının Temelleri</td>
+
+            <td>-</td>
+
+            <td>Programlamanın Temelleri</td>
+          </tr>
+
+          <tr>
+            <td>10:30 11:20</td>
+
+            <td>-</td>
+
+            <td>-</td>
+
+            <td>-</td>
+
+            <td>Fizik I</td>
+
+            <td>Programlamanın Temelleri</td>
+          </tr>
+
+          <tr>
+            <td>11:30 12:20</td>
+
+            <td>-</td>
+
+            <td>-</td>
+
+            <td>-</td>
+
+            <td>Fizik I</td>
+
+            <td>Programlamanın Temelleri</td>
+          </tr>
+
+          <tr>
+            <td>13:30 14:20</td>
+
+            <td>Veritabanı I</td>
+
+            <td>-</td>
+
+            <td>Ofis Yazılımları</td>
+
+            <td>Grafik Animasyon I</td>
+
+            <td>Temel Matematik</td>
+          </tr>
+
+          <tr>
+            <td>14:30 15:20</td>
+
+            <td>Veritabanı I</td>
+
+            <td>-</td>
+
+            <td>Ofis Yazılımları</td>
+
+            <td>Grafik Animasyon I</td>
+
+            <td>Temel Matematik</td>
+          </tr>
+
+          <tr>
+            <td>15:30 16:20</td>
+
+            <td>Veritabanı I</td>
+
+            <td>-</td>
+
+            <td>-</td>
+
+            <td>Grafik Animasyon I</td>
+
+            <td>-</td>
+          </tr>
+
+          <tr>
+            <td>16:30 17:20</td>
+
+            <td>Veritabanı I</td>
+
+            <td>-</td>
+
+            <td>-</td>
+
+            <td>Grafik Animasyon I</td>
+
+            <td>-</td>
+          </tr>
+        </table>
+        <div style="margin-bottom: 50px"></div>
+      </div>
+    </div>
+
+    <!-- ***** Core Value Area End ***** -->
+
+    <section class="clients-feedback-area section-padding-0-80 clearfix">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="slider slider-for">
+              <!-- Client Feedback Text -->
+              <blockquote class="client-feedback-text text-center">
+                <div class="quote-icon">
+                  <i class="icon_quotations" aria-hidden="true"></i>
+                </div>
+                <div class="client-description text-center">
+                  <h4>
+                    “ Bir saat zaman kaybetmeye cesaret eden biri, hayatın
+                    değerini keşfetmemiştir. "
+                  </h4>
+                </div>
+                <div class="quote-icon">
+                  <i class="blockquote" aria-hidden="true"></i>
+                </div>
+                <h5>Charles Darwin</h5>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Client Feedback Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area section-padding-80-0">
+      <div class="container">
+        <div class="row justify-content-between">
+          <!-- Single Footer Widget -->
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="single-footer-widget mb-60">
+              <!-- Logo -->
+              <a class="nav-brand" href="index.html"
+                ><p style="font-size: 3rem; font-weight: 600">
+                  gny<span style="color: #4c1224">.</span>
+                </p>
+              </a>
+
+              <div class="copywrite-text">
+                <p>
+                  &copy;
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | Gamzenur Yılmaz
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Footer Widget -->
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="single-footer-widget mb-60"></div>
+          </div>
+
+          <!-- Single Footer Widget -->
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="single-footer-widget mb-60">
+              <!-- Widget Title -->
+              <h4 class="widget-title">İletişim</h4>
+              <!-- Footer Content -->
+              <div class="footer-content mb-30">
+                <h4>+90 (545) 228 38 79</h4>
+                <h6>Konyaaltı / ANTALYA</h6>
+              </div>
+              <!-- Social Info -->
+              <div class="footer-social-info">
+                <a
+                  style="background-color: #4c1224"
+                  href="https://wa.me/905452283879"
+                  class="pinterest renk"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Whatsapp"
+                  ><i class="fa fa-whatsapp"></i
+                ></a>
+                <a
+                  style="background-color: #cd8199"
+                  href="https://www.instagram.com/gamzee.ylmaz/"
+                  class="instagram renk"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Instagram"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a
+                  style="background-color: #4c1224"
+                  href="https://www.linkedin.com/in/gamzenuryilmaz/"
+                  class="instagram renk"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Linkedin"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+                <a
+                  style="background-color: #cd8199"
+                  href="mailto:gamzee584nur@gmail.com"
+                  class="youtube renk"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Email"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- ******* All JS ******* -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var skillLevels = document.querySelectorAll(".skill-level");
+
+        skillLevels.forEach(function (skillLevel) {
+          var width = skillLevel.style.width;
+          skillLevel.style.width = "0";
+
+          setTimeout(function () {
+            skillLevel.style.width = width;
+          }, 10);
+        });
+      });
+    </script>
+    <!-- jQuery js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All js -->
+    <script src="js/mona.bundle.js"></script>
+    <!-- Active js -->
+    <script src="js/default-assets/active.js"></script>
+  </body>
+</html>
